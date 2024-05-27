@@ -31,3 +31,29 @@ const typed = new Typed(".multiple-text", {
   backDelay: 1000,
   loop: true,
 });
+
+// Anonymus Button Confirm
+const link = "https://ngl.link/_ziii081";
+const wa = "https://wa.me/6283867246731?text=Assalamu'alaikum";
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function chatWa() {
+  window.open(wa, "_blank");
+  closeModal();
+}
+
+function confirmAction() {
+  window.open(link, "_blank");
+  closeModal();
+}
+
+// Close the modal when clicking outside of it
+window.onclick = function (event) {
+  const modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

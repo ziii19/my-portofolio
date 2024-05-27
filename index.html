@@ -302,12 +302,27 @@
         <div class="flex flex-wrap w-full justify-center">
           <!-- Anonymus Message -->
           <div class="w-full text-center pb-4 md:w-1/2 lg:w-1/3">
-            <a href="https://ngl.link/_ziii081" target="_blank"
+            <a
               ><button
-                class="w-2/3 py-2 bg-slate-300 border-2 border-dark rounded-2xl hover:bg-slate-500 shadow-lg hover:shadow-md hover:shadow-slate-400">
+                class="w-2/3 py-2 bg-slate-300 border-2 border-dark rounded-2xl hover:bg-slate-500 shadow-lg hover:shadow-md hover:shadow-slate-400"
+                onclick="openModal()">
                 Anonymus Message
               </button></a
             >
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <p>
+                NGAPAIN PAKE PESAN ANONIM?? FREAKKK! MENDING JUGA LANGSUNG WA!!!
+              </p>
+              <button class="modal-button cancel" onclick="chatWa()">
+                WA saja
+              </button>
+              <button class="modal-button confirm" onclick="confirmAction()">
+                Lanjut
+              </button>
+            </div>
           </div>
           <!-- Linkedin -->
           <div class="w-full text-center pb-4 md:w-1/2 lg:w-1/3">
