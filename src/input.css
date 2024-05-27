@@ -48,6 +48,13 @@ body {
 }
 
 .modal {
+  @apply z-10 left-0 top-0 w-full h-full overflow-auto;
+  display: none;
+  position: fixed;
+}
+
+.modal {
+  @apply bg-slate-800 bg-opacity-70 pt-32;
   display: none;
   position: fixed;
   z-index: 1;
@@ -58,32 +65,15 @@ body {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 100px;
+  /* padding-top: 60px; */
 }
 
 .modal-content {
-  @apply rounded-2xl;
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 400px;
-  text-align: center;
+  @apply bg-white m-auto p-5 border-dark w-2/3  rounded-2xl;
 }
 
 .modal-button {
-  @apply mx-3 mt-5;
+  @apply mx-1 lg:mx-3 mt-5 border-2 border-dark rounded-lg;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-}
-
-.modal-button.confirm {
-  @apply bg-yellow-500 text-dark;
-}
-
-.modal-button.cancel {
-  @apply bg-green-600 text-white;
 }

@@ -98,15 +98,31 @@
                 <span class="text-dark multiple-text"></span>
               </h2>
               <p class="font-medium text-slate-400 mb-10 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolorem, assumenda?
+                I am a student at SMK Muhammadiyah 1 Sukoharjo, majoring in
+                Software Engineering.
               </p>
 
-              <a
-                href="#"
-                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out"
-                >Download CV</a
+              <a href="#"
+                ><button
+                  id="buttonCv"
+                  class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out">
+                  Download CV
+                </button></a
               >
+
+              <div
+                id="alertCv"
+                class="fixed hidden z-10 left-0 top-0 w-full h-full overflow-auto bg-slate-800 bg-opacity-70 pt-32">
+                <div
+                  class="bg-white m-auto p-5 border-dark w-2/3 text-center text-base font-medium rounded-2xl lg:w-1/2">
+                  <p>Gayane meh Download CV kek arep ngei gaean wae 😒</p>
+                  <button
+                    id="closeAlert"
+                    class="bg-red-600 text-white px-10 py-1 mt-6 rounded-lg">
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2 mt-5 md:mt-0">
@@ -141,7 +157,7 @@
                 Hello! I am Fauzi Fajar Alfalah
               </h3>
               <p
-                class="font-medium text-center lg:text-start text-slate-500 mb-10 text-sm">
+                class="font-medium text-center lg:text-start text-slate-500 mb-10 text-sm leading-6 tracking-wide">
                 and I am a dedicated Flutter developer with a passion for
                 creating elegant and user-friendly mobile applications. With
                 expertise in Dart programming and a keen eye for design, I aim
@@ -304,22 +320,29 @@
           <div class="w-full text-center pb-4 md:w-1/2 lg:w-1/3">
             <a
               ><button
-                class="w-2/3 py-2 bg-slate-300 border-2 border-dark rounded-2xl hover:bg-slate-500 shadow-lg hover:shadow-md hover:shadow-slate-400"
-                onclick="openModal()">
+                onclick="openModal()"
+                class="w-2/3 py-2 bg-slate-300 border-2 border-dark rounded-2xl hover:bg-slate-500 shadow-lg hover:shadow-md hover:shadow-slate-400">
                 Anonymus Message
               </button></a
             >
           </div>
 
-          <div id="myModal" class="modal">
-            <div class="modal-content">
+          <div
+            id="myModal"
+            class="fixed hidden z-10 left-0 top-0 w-full h-full overflow-auto bg-slate-800 bg-opacity-70 pt-32">
+            <div
+              class="bg-white m-auto p-5 border-dark w-2/3 text-center text-base font-medium rounded-2xl lg:w-1/2">
               <p>
                 NGAPAIN PAKE PESAN ANONIM?? FREAKKK! MENDING JUGA LANGSUNG WA!!!
               </p>
-              <button class="modal-button cancel" onclick="chatWa()">
+              <button
+                class="modal-button bg-green-600 hover:bg-green-400 text-white"
+                onclick="chatWa()">
                 WA saja
               </button>
-              <button class="modal-button confirm" onclick="confirmAction()">
+              <button
+                class="modal-button bg-yellow-500 hover:bg-yellow-400 text-white"
+                onclick="confirmAction()">
                 Lanjut
               </button>
             </div>

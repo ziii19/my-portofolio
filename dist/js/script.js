@@ -42,18 +42,32 @@ function openModal() {
 
 function chatWa() {
   window.open(wa, "_blank");
-  closeModal();
 }
 
 function confirmAction() {
   window.open(link, "_blank");
-  closeModal();
 }
 
-// Close the modal when clicking outside of it
+// Alert Cv
+const alertCv = document.getElementById("alertCv");
+const buttonCv = document.getElementById("buttonCv");
+const closeBtn = document.getElementById("closeAlert");
+
+buttonCv.addEventListener("click", function () {
+  alertCv.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function () {
+  alertCv.style.display = "none";
+});
+
+// Close when clicking outside of it
 window.onclick = function (event) {
   const modal = document.getElementById("myModal");
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+  if (event.target == alertCv) {
+    alertCv.style.display = "none";
   }
 };
