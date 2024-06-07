@@ -37,7 +37,7 @@ const link = "https://ngl.link/_ziii081";
 const wa = "https://wa.me/6283867246731?text=Assalamu'alaikum";
 
 function openModal() {
-  document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style.display = "flex";
 }
 
 function chatWa() {
@@ -54,7 +54,7 @@ const buttonCv = document.getElementById("buttonCv");
 const closeBtn = document.getElementById("closeAlert");
 
 buttonCv.addEventListener("click", function () {
-  alertCv.style.display = "block";
+  alertCv.style.display = "flex";
 });
 
 closeBtn.addEventListener("click", function () {
