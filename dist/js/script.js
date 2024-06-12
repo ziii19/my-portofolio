@@ -33,7 +33,7 @@ const typed = new Typed(".multiple-text", {
 });
 
 // Anonymus Button Confirm
-const link = "https://ngl.link/_ziii081";
+const link = "https://ziii08-feedback.vercel.app";
 const wa = "https://wa.me/6283867246731?text=Assalamu'alaikum";
 
 function openModal() {
